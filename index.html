@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css files/style.css" />
+    <!-- fonts -->
+    <!-- font one -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font two -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome -->
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="icone">
+          <h1>Weather Now</h1>
+        </div>
+        <div class="box-mode">
+          <i class="fa-solid fa-gear"></i>
+          <select name="" id="mode">
+            <option value="saab">dark</option>
+            <option value="volvo">light</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <section class="weather-page">
+      <div class="container">
+        <h1 class="intro-search">How's the sky looking today?</h1>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass icone-search"></i>
+          <input
+            class="search-on"
+            placeholder="Search for a city..."
+            type="search"
+            name=""
+            id="search"
+          />
+          <label for="search">Search</label>
+        </div>
+        <div class="content">
+          <div class="info">
+            <div class="intro-box">
+              <div>
+                <h1></h1>
+                <span></span>
+              </div>
+              <h1 class="num"></h1>
+            </div>
+            <div class="boxes">
+              <div class="box">
+                <p>Feels likes</p>
+                <h2 class="apparent"></h2>
+              </div>
+              <div class="box">
+                <p>Humidity</p>
+                <h2 class="Humidity"></h2>
+              </div>
+              <div class="box">
+                <p>Wind</p>
+                <h2 class="wind"></h2>
+              </div>
+              <div class="box">
+                <p>Precipitation</p>
+                <h2 class="precipitation"></h2>
+              </div>
+            </div>
+            <p>daily forecast</p>
+            <div class="daily">
+              <div class="daily-box">
+                <h2></h2>
+                <div>
+                  <span class="one"></span>
+                  <span class="two"></span>
+                </div>
+              </div>
+              <div class="daily-box">
+                <h2></h2>
+                <div>
+                  <span class="one"></span>
+                  <span class="two"></span>
+                </div>
+              </div>
+              <div class="daily-box">
+                <h2></h2>
+                <div>
+                  <span class="one"></span>
+                  <span class="two"></span>
+                </div>
+              </div>
+              <div class="daily-box">
+                <h2></h2>
+                <div>
+                  <span class="one"></span>
+                  <span class="two"></span>
+                </div>
+              </div>
+              <div class="daily-box">
+                <h2></h2>
+                <div>
+                  <span class="one"></span>
+                  <span class="two"></span>
+                </div>
+              </div>
+              <div class="daily-box">
+                <h2></h2>
+                <div>
+                  <span class="one"></span>
+                  <span class="two"></span>
+                </div>
+              </div>
+              <div class="daily-box">
+                <h2></h2>
+                <div>
+                  <span class="one"></span>
+                  <span class="two"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="forecast">
+            <div class="hourly-box">
+              <div class="hourly">
+                <h3>Hourly Forecast</h3>
+                <select name="" id="day">
+                  <option value="0">Sunday</option>
+                  <option value="1">Monday</option>
+                  <option value="2">Tuesday</option>
+                  <option value="3">Wednesday</option>
+                  <option value="4">Thursday</option>
+                  <option value="5">Friday</option>
+                  <option value="6">Saturday</option>
+                </select>
+              </div>
+            </div>
+            <ul>
+              <li><span class="hour"></span><span class="deg"></span></li>
+              <li><span class="hour"></span><span class="deg"></span></li>
+              <li><span class="hour"></span><span class="deg"></span></li>
+              <li><span class="hour"></span><span class="deg"></span></li>
+              <li><span class="hour"></span><span class="deg"></span></li>
+              <li><span class="hour"></span><span class="deg"></span></li>
+              <li><span class="hour"></span><span class="deg"></span></li>
+              <li><span class="hour"></span><span class="deg"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
